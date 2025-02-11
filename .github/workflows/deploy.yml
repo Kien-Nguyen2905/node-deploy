@@ -34,7 +34,7 @@ jobs:
           script: |
             export NVM_DIR=~/.nvm
             source ~/.nvm/nvm.sh
-            cd ~/node-deploy
+            cd ~/main/node-deploy
             git fetch --all
             git reset --hard origin/main
             echo "${{secrets.ENV_PRODUCTION}}" > .env
